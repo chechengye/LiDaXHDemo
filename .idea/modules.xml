@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/LiDaXHDemo.iml" filepath="$PROJECT_DIR$/LiDaXHDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day03Demo/day03Demo.iml" filepath="$PROJECT_DIR$/day03Demo/day03Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day04Demo/day04Demo.iml" filepath="$PROJECT_DIR$/day04Demo/day04Demo.iml" />
+    </modules>
+  </component>
+</project>
