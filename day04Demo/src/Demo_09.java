@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.Random;
+import java.util.Scanner;
 
 /**
  * 双色球
@@ -26,11 +27,25 @@ public class Demo_09 {
                 }
             }
         }
+
         System.out.println("系统选择的球:" + Arrays.toString(sysRedBalls) + "，" + sysBlueBall);
         System.out.println("用户选择的球:" + Arrays.toString(userRedBalls) + "，" + userBlueBall);
         if(count == 4 || userBlueBall.equals(sysBlueBall)){
             System.out.println("恭喜你，中五元！");
         }
+
+        System.out.println("用户自己选择");
+        Scanner sc = new Scanner(System.in);
+        int[] userRedBalls_rx = new int[6];
+        int count1 = 0;
+        while (true){
+            userRedBalls_rx[count1++] = sc.nextInt();
+            if(count1 == 6)
+                break;
+        }
+        Arrays.sort(userRedBalls_rx);
+        System.out.println(Arrays.toString(userRedBalls_rx));
+
 
     }
 
