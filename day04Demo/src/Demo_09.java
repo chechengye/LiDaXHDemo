@@ -27,7 +27,7 @@ public class Demo_09 {
                 }
             }
         }
-
+        System.out.println("奖池:" + Arrays.toString(pool));
         System.out.println("系统选择的球:" + Arrays.toString(sysRedBalls) + "，" + sysBlueBall);
         System.out.println("用户选择的球:" + Arrays.toString(userRedBalls) + "，" + userBlueBall);
         if(count == 4 || userBlueBall.equals(sysBlueBall)){
@@ -76,11 +76,12 @@ public class Demo_09 {
     private static String[] getPool(){
         String[] pool = new String[33];
 
-        for(int i = 0 ; i < 9 ; i++){
-            pool[i] = "\"0" + (i+1) + "\"";
-        }
-        for(int i = 9 ; i < pool.length ; i++){
-            pool[i] = "\"" + (i+1) + "\"";
+        for(int i = 0 ; i < pool.length ; i++){
+            if(i < 9){
+                pool[i] = "\"0" + (i+1) + "\"";
+            }else {
+                pool[i] = "\"" + (i+1) + "\"";
+            }
         }
 
 
